@@ -1,0 +1,1 @@
+Tamagotchi Project read me remo
