@@ -1,6 +1,44 @@
+/* styling of buttons*/
+button  {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #57467B;
+    color: #fff;
+    border: 2px solid #3E1E84;
+    border-radius: 200px;
+    transition: transform 0.2s, border 0.2s;
+}
 
-.movingGif{
-    width: 200px;
+/* styling of the name of teh game*/
+.Nameofthegame{
+    text-align: center;
+    font-family: 'Bangers', cursive; 
+    font-size: xx-large;
+    padding: 20px;
+}
+/* styling of banner*/
+
+.score1{
+    text-align: left;
+    font-family: 'Bangers', cursive;
+    font-size: large;
+    padding: 20px;
+}
+
+/* styling of banner*/
+.navbar{
+    background-color: #70F8BA;
+}
+
+.image_container{
+    display: flex;
+    flex-direction: column;
+}
+#eggDino{
+    width: 100px;
     height: auto;
     position: relative;
     animation-name: slidein;
@@ -13,20 +51,62 @@
         left: 0;
     }
     to {
-        left: calc(100% - 200px); /* Adjust based on the width of your element */
+        left: calc(100% - 200px);
     }
 }
-.image_container{
-    display: flex;
-    flex-direction: column;
-   
+
+#tenageDino{
+    width: 100px;
+    height: auto;
+    position: relative;
+    animation-name: slidein;
+    animation-duration: 7s, 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
-    /* animation: moveLeftRight 4s linear infinite;
+@keyframes slidein {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 200px);
+    }
 }
-    @keyframes moveLeftRight {
-        0%, 100% {
-            left: 0;
-        }
-        50%{
-            left: calc(100%-50px)}
+#adultDino{
+    width: 150px;
+    height: auto;
+    position: relative;
+    animation-name: slidein;
+    animation-duration: 7s, 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes slidein {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 200px); 
+    }
+}
+
+
+.oldDino{
+    width: 150px;
+    height: auto;
+    position: relative;
+    animation-name: slidein;
+    animation-duration: 7s, 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes slidein {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 200px); 
+    }
+    }
+
 
