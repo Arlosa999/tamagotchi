@@ -44,13 +44,21 @@ button3.addEventListener("click", function(){ // access the function when i clic
 
 // turn on and turn off the light - I need to add change image to day and night picture //doesnt work // put me to sleep doesnt work 
 const button5=document.querySelector("#turnLights")
-const blackscreen=document.getElementById("#blackscreen")
-button5.addEventListener("mouseover", function(){
+const blackscreen=document.getElementById("blackscreen")
+button5.addEventListener("click", function(){
+//  if (blackscreen.style.display==="block"){
   blackscreen.style.display="block"
+//  }
+ setTimeout(()=>{blackscreen.style.display = "none"}, 2000)
+
+ //  else{
+//   blackscreen.style.display="block"
+//  }
 })
-button5.addEventListener("mouseout", function(){
-  blackscreen.style.display="none"
-})
+
+// button5.addEventListener("mouseout", function(){
+//   blackscreen.style.display="none"
+// })
 
 //put pet to sleep 
 const button4=document.querySelector("#putMeToSleep")
@@ -136,14 +144,7 @@ function increaseAge() {
       // If you have more age elements, add them here
   
   // }
-
-
-
 // increase Hunger, Sleepiness, Bored metrics -  problem it updates on the back end but not on the front end 
-
-
-
-
   //die 
   function die(){
     if (tamagotchi.hunger===10 || tamagotchi.sleepiness===10 || tamagotchi.boredom===10 || tamagotchi.age===50){
